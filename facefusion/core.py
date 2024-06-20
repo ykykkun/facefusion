@@ -231,10 +231,7 @@ def run(program : ArgumentParser) -> None:
 		for ui_layout in ui.get_ui_layouts_modules(facefusion.globals.ui_layouts):
 			if not ui_layout.pre_check():
 				return
-		ui.launch(
-			server_name='0.0.0.0', 
-            server_port=7863,
-		)
+		ui.launch()
 
 
 def destroy() -> None:
